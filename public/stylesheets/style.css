@@ -1,0 +1,107 @@
+body, html {
+    height:100%;
+}
+
+body {
+  font-family: 'Oswald', sans-serif;
+  overflow: hidden;
+}
+
+div.wrap {
+    height:100%; 
+    overflow:hidden;
+}
+
+.vimeoFrame { 
+    min-width: 1280px; 
+    min-height: 960px; 
+    width:auto; 
+    height:auto; 
+    overflow:hidden; 
+    margin:-2% auto;
+} 
+.vimeoFrame {
+    width:638px; 
+    height:358px; 
+    overflow:hidden; 
+    margin:-2% auto;
+} 
+
+.vimeoXtra {
+    display:block; 
+    width:638px; 
+    height:110%; 
+    margin:0 auto;
+}
+.vimeoFrame .vimeoXtra {
+    margin-top:-15%;
+}
+
+iframe{
+    min-width: 110%; 
+    min-height: 110%; 
+    width: auto;
+    height: auto;
+    z-index: -1;
+    background-size: cover; 
+}
+
+h1, h2, h3, p{
+    position: absolute;
+    z-index: 1; 
+    color: #FFF;
+}
+.workWith{
+    top: 55%;
+    left: 60%;
+}
+
+.welcome{
+    top: 10%;
+    left: 3%;
+}
+
+h3{
+    top: 85%;
+    left: 3%;
+}
+
+.workLinks {
+    position: absolute;
+    z-index: 1; 
+    color: #FFF;
+    top: 10%; 
+    left: 3%; 
+    width: 30%; 
+}
+
+p{
+    color: #FFF;
+    z-index: 1; 
+    color: #FFF;
+    position: absolute;
+    top: 62%; 
+    left: 60%;
+    width: 17%; 
+    text-align: center;
+}
+span{
+    margin-left: 2%
+}
+li {
+    font-family: "Open Sans", sans-serif; 
+}
+
+
+#links{
+    position: absolute;
+    z-index: 1; 
+    color: #FFF;
+    top: 5%; 
+    left: 3%; 
+    width: 30%; 
+}
+a {
+  color: #FFF;
+  text-decoration: none;  
+}
