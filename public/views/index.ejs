@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><%= check %></title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans|Oswald" rel="stylesheet">
+  </head>
+  <body>
+<div class='wrap'>
+  <% include templates/header.ejs %>
+  <div class='workLinks'>
+    <a class='gitHub' href="http://www.linkedin.com/in/Scott-T-Miller" target="_blank">GitHub</a>
+    <br>
+    <a class='linkedIn' href="https://github.com/ScottMillerWesCoas?tab=repositories" target="_blank">LinkedIn</a>
+    <br>
+    Scott.T.Miller1@gmail.com
+  </div>
+<div class="vimeoFrame"> <iframe class="vimeoXtra" src="https://player.vimeo.com/video/184383202?hd=1&autoplay=1&loop=1&title=0&byline=0&portrait=0" width='1280' height='720' frameborder="0"></iframe></div>
+
+
+  
+
+
+    <h1 class='workWith'><%= title %></h1>
+
+     <h3><%= points %></h3>
+
+    
+    <p>
+    <% for (var i = 0; i < 7; i++){ %>
+        <span><%= list[i] %></span>
+       <% }  %>
+   </p>
+</div>
+  </body>
+</html>

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><%= check %></title>
+    <link rel='stylesheet' href='/stylesheets/aboutStyle.css' />
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js"   integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="   crossorigin="anonymous"></script>
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans|Oswald" rel="stylesheet">
+         <script type="text/javascript" src="/javascripts/three.min.js"></script>
+   
+  </head>
+  <body>
+
+  <% include templates/header.ejs %>
+
+  <div id='containerG'></div>
+ 
+    <h1 class='res'><%= resume.docTitle %></h1>
+    
+<ul>
+
+     <% resume.categories.forEach(function(el){ %>
+          <li><b><%= el.categoryName %></b></li>
+            <ul> 
+             <% for (var x in el){ %>
+             <% if ( x === 'categoryTag') { %>
+              <li><i><%= el[x] %></i></li> 
+               <% } %> 
+              <% if ( x === 'categoryDescriptionA' || x === 'categoryDescription0' || x === 'categoryDescription1' || x === 'categoryDescription2' || x === 'categoryDescription3' || x === 'categoryDescription4') { %>
+              <li><%= el[x] %></li> 
+              <% } %> 
+            <% } %> 
+            </ul>     
+      
+    
+   <% }) %> 
+
+
+  
+    
+   
+    </ul>
+     <script type="text/javascript" src="/javascripts/earthAndMoon.js"></script>
+    <script type="text/javascript" src="/javascripts/galaxyScene.js"></script>
+  </body>
+
+</html>

@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><%= check %></title>
+    <link rel='stylesheet' href='/stylesheets/aboutStyle.css' />
+  </head>
+  <body>
+
+  <% include templates/header.ejs %>
+
+       <h3><%= points %></h3>
+  
+    <h1><%= check %></h1>
+    <h1>Welcome to <%= title %></h1>
+    <ul>
+    <% for (var i = 0; i < list.length; i++){ %>
+        <li><%= list[i] %></li>
+       <% }  %>
+   
+    </ul>
+  </body>
+</html>
