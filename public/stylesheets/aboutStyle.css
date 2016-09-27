@@ -1,0 +1,49 @@
+body {
+  font-family: 'Oswald', sans-serif;
+  overflow: hidden;
+  background-image:url('starfield2.jpg');
+}
+
+
+div.wrap {
+    height:100%; 
+    overflow:hidden;
+}
+
+.res {
+    margin-top: 5%;
+    margin-left: 1.5%;  
+    color: #FAFAFA;
+}
+
+ul{
+    color: #FAFAFA;
+    z-index: 1; 
+    color: #FAFAFA;
+    width: 80%;
+}
+
+#containerG{
+    position: absolute; 
+    z-index: 1; 
+    top: 20%;
+    left: 30%;
+}
+
+li {
+    font-family: "Open Sans", sans-serif; 
+}
+
+
+#links{
+    position: absolute;
+    z-index: -1; 
+    color: #FAFAFA;
+    top: 5%; 
+    left: 2.25%; 
+    width: 30%; 
+}
+a {
+  color: #FAFAFA;
+  text-decoration: none;  
+}
